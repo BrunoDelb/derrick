@@ -14,3 +14,4 @@ RUN GO111MODULE=on CGO_ENABLED=0 go run github.com/mitchellh/gox -ldflags -paral
 
 FROM scratch
 COPY --from=build _/bin/ /bin/
+
